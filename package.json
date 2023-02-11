@@ -1,0 +1,36 @@
+{
+  "name": "MelSlut",
+  "version": "1.0.0",
+  "description": "Bot discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonychaussin/DisBot.git"
+  },
+  "keywords": [
+    "Bot",
+    "Discord"
+  ],
+  "author": "Anthony Chaussin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anthonychaussin/DisBot/issues"
+  },
+  "homepage": "https://github.com/anthonychaussin/DisBot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "keyv": "^4.5.2",
+    "node-cron": "^3.0.2",
+    "node-schedule": "^2.1.1",
+    "pm2": "^5.2.2",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0"
+  }
+}
