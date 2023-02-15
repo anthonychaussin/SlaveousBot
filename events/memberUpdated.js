@@ -28,10 +28,12 @@ module.exports = {
                 'Go on, let your temptations ride you to <#975194318480506970> then into our dungeon.\nDon\'t keep us all waiting.~ <a:firered:976283142015049810>'
             )
             .setTimestamp();
+        let rolefinded = newMember.guild.roles.cache.filter(r => r.id === '833632646180503612').length > 0;
+        console.info(rolefinded + ' rôles finded');
         newMember.roles.add(newMember.guild.roles.cache.find(r => r.id === '833632646180503612' || r.id === '975139168416067625')).catch(console.error);
         newMember.guild.channels.cache.find(c => c.id === '712637102289977408' || c.id === '975046656800202810').send({embeds:[
-            newMember.guild.roles.cache.filter(r => r.id === '833632646180503612').length > 0 ? exampleEmbed : exampleEmbedEN],
-            content: newMember.guild.roles.cache.filter(r => r.id === '833632646180503612').length > 0 ? content : contentEN
+            rolefinded ? exampleEmbed : exampleEmbedEN],
+            content: rolefinded ? content : contentEN
         }).then();
     },
 };
